@@ -1,3 +1,5 @@
+import type { Product } from "./types";
+
 export const api = {
   getProducts: async (): Promise<{ products: Product[] }> => {
     const response = await fetch("https://dummyjson.com/products");
