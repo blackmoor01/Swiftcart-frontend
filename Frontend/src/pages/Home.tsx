@@ -3,6 +3,7 @@ import Header from "../components/header/Header";
 import ProductGallery from "../components/product/ProductGallery";
 import ProductDetail from "../components/product/ProductDetail";
 import { useCart } from "../components/cart";
+import type { Product } from "../lib/types";
 
 const Home = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
